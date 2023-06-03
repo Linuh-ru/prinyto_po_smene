@@ -20,9 +20,9 @@ driver.implicitly_wait(0.5)
 #Стартовая страница (аутентификация)
 driver.get("http://tasks.o2dc.ru/login.php")
 username = driver.find_element(by=By.NAME, value="username")
-username.send_keys("aomarov")
+username.send_keys("**************")
 password = driver.find_element(by=By.NAME, value="password")
-password.send_keys("qQ12345")
+password.send_keys("**************")
 password.send_keys(Keys.ENTER)
 
 def ticket_scanner():
